@@ -1,25 +1,25 @@
 import { observable, action } from 'mobx';
 
 export default class UserStore {
-  @observable username = null;
+  @observable email = null;
 
   constructor(authService) {
     this.authService = authService;
   }
 
   @action
-  async signin(username, password) {
-    this.username = await this.authService.signin(username, password);
+  async signin(email, password) {
+    this.email = await this.authService.signin(email, password);
   }
 
   @action
-  async signup(username, password) {
-    return this.authService.signup(username, password);
+  async signup(email, password) {
+    return this.authService.signup(email, password);
   }
 
   @action
   signout() {
-    this.username = null;
+    this.email = null;
     this.authService.removeToken();
   }
 }

@@ -27,17 +27,17 @@ class SignUpPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password: '',
       errorMessage: null,
     };
   }
 
   submit = async () => {
-    const { username, password } = this.state;
+    const { email, password } = this.state;
 
     try {
-      await this.props.userStore.signup(username, password);
+      await this.props.userStore.signup(email, password);
       window.location.hash = '/signin';
     } catch (error) {
       const errorMessage = error.response.data.message;
@@ -59,10 +59,10 @@ class SignUpPage extends Component {
           <div>
             <FormField
               id="outlined-name"
-              label="Username"
+              label="Email"
               margin="dense"
               variant="outlined"
-              onChange={e => this.setState({ username: e.target.value })}
+              onChange={e => this.setState({ email: e.target.value })}
             />
           </div>
           <div>
