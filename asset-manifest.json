@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://doneland.github.io/nestjs-task-manager-frontend/static/css/main.985582f7.css",
+    "main.js": "https://doneland.github.io/nestjs-task-manager-frontend/static/js/main.39b02028.js",
+    "index.html": "https://doneland.github.io/nestjs-task-manager-frontend/index.html",
+    "main.985582f7.css.map": "https://doneland.github.io/nestjs-task-manager-frontend/static/css/main.985582f7.css.map",
+    "main.39b02028.js.map": "https://doneland.github.io/nestjs-task-manager-frontend/static/js/main.39b02028.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.985582f7.css",
+    "static/js/main.39b02028.js"
+  ]
+}
